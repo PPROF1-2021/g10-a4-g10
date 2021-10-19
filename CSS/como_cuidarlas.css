@@ -18,14 +18,18 @@ header
 
 
 body
-{background-image: url(background4.jpg);
+{background-image: url(backg3.png);
 background-attachment: fixed;
 background-size: cover;
 opacity: 10;
 }
 
+image
+
+
 nav
-{text-align: center; color: lightseagreen }
+{text-align: center; color: lightseagreen;
+}
 h1
 {margin: 2cm; color:lightseagreen; text-align:center; background-image: url(background2);
 }
