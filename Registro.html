@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="utf-8" />
+        <meta name="FORMULARIO DE REGISTRO" content="FORMULARIO DE REGISTRO">
+        <link rel="stylesheet" href="CSS/estilos.css" />
+        <title>FORMULARIO DE REGISTRO</title>
+    </head>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="nativas.html">Plantas Nativas</a>
+        <a href="como_cuidarlas.html">Cuidados</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="registro.html">Registrarse</a>
+      </nav>
+    <div>
+    <img src="Imagen/banner1.png" id="banner"> </div>
+    
+    <body>
+        
+
+        <h1>Registrate para recibir nuestras novedades!</h1>
+        <br><h2><em> Plantar un árbol, tu mejor elección para el ambiente</em> </h2>
+
+        
+            <h3>FORMULARIO DE REGISTRO</h3>
+            <form method="POST" action="tratamiento.php"> 
+                <label for="nombre">Nombre/s:</label>
+                <input type="text" name="nombre" id="nombre"><br>
+                <label for="apellido">Apellido/s:</label>
+                <input type="text" name="apellido" id="apellido"><br>
+                <label for="mail">Correo Electronico:</label>
+                <input type="email" name="mail" id="mail"><br>
+                <label for="nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" name="nacimiento" id="nacimiento"><br>
+                <label for="usuario">Usuario:</label> 
+                <input type="text" name="usuario" id="usuario" placeholder="Hasta 10 caracteres" maxlength="10"><br>
+                <label for="clave">Contraseña:</label>
+                <input type="password" name="clave" id="clave"><br>
+                
+
+                <p>Tamaño de vereda del inmueble</p>
+
+                <input type="checkbox" id="tamañovereda">
+                <label for="tamañovereda">Hasta 2 metros</label>
+                <input type="checkbox" id="tamañovereda">
+                <label for="tamañovereda">Entre 2,5 y 3,5 metros</label>
+                <input type="checkbox" id="tamañovereda">
+                <label for="tamañovereda">Entre 3,5 y 4,5 metros</label><br>
+                <input type="checkbox" id="tamañovereda">
+                <label for="tamañovereda">Más de 4,5 metros</label><br>
+
+                <br><input type="submit" value="ENVIAR">
+                
+            </form>  
+            <p>Recuerda que al registrarte estás aceptando nuestras Condiciones de uso y Política de privacidad.</p>
+            
+
+        <footer> Este sitio web es una creación objeto de la Materia "Programación Web 1" de la Tecnicatura Superior en Desarrollo web y Aplicaciones Digitales del Instituto Superior Politécnico de Córdoba. <br>
+            <br> Fue creado por: Andulce Natalia, Fuentes Ezequiel, Orellano Laura y Riccio Martín, utilizando las herramientas HTML5 y CSS. @Copyright 2021. </footer>
+
+        
+    </body>
+    
+    </html>
