@@ -5,21 +5,30 @@
 
 }
 *
-{margin:10px;
+{margin:8px;
     padding: 0px;
 }
+
 header
 {   
+<<<<<<< HEAD
     background-image:url(banner2.jpg);
     background-attachment: fixed;
     background-size: cover;
     opacity: 1;
     }
+=======
+background-image:url(imagen/banner2.png);
+background-attachment:fixed;
+background-size: cover;
+opacity:10;
+}
+>>>>>>> 6575d23c5c14273aad79b0947927c6b4d696a2c9
 
 
 body
-{background-image: url(background4.jpg);
-background-attachment: fixed;
+{background-image: url(imgen/backg3.png);
+background-repeat: no-repeat;
 background-size: cover;
 opacity: 10;
 }
@@ -45,8 +54,8 @@ p
     box-shadow: 20px 20px 20px 20px; box-shadow: 5px 5px 5px black;
 }
 
-div
-{ border-image: 0,5cm; color: black; 
+image
+{ border-image: 5px; color: black; 
 }
 *
 {margin: 10px;
