@@ -1,19 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contacto.css">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css" />
     <title>Formulario De Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="css/favicon.png" >
+    <title>Formulario de Contacto con Bootstrap y PHP</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   
+  
 </head>
-<body>
-    <form action=""></form>
-    <h2>Contacto</h2>
-    <input type="text" name="Nombre" placeholder="ejemplo: Juan Perez">
-    <input type="text" name="Email" placeholder= "mail@mail.com">
-    <input type="text" name="Telefono" placeholder= "con codigo de area sin 0 y sin 15">
-    <textarea name="Mensaje" placeholder="Tu consulta aqui"></textarea>
-    <input type="button" value="Enviar" id="button">
- </body>
+
+
+    <body class="content"> 
+      <header>
+        <img src="css/banner.jpg" id="banner" class=logo />
+    </header>
+  
+    <nav>
+      <ol>
+      <li><a href="login.html">Login</a></li> 
+      <li><a href="registro.html">Registrarse</a></li>
+      <li><a href="contacto.html">Contacto </a></li>
+      <li><a href="como_cuidarlas.html">Cuidados </a></li>
+      <li><a href="nativas.html">Plantas Nativas </a></li> 
+      <li><a href="index.html">Inicio</a></li> 
+    </ol>
+    </nav>
+  
+    <p>FORMULARIO DE CONTACTO</p>
+<form method="POST" action="enviardatos.php" class="needs-validation" novalidate id="form">
+
+  <div class="form-row mt-5">
+      <div class="col-md-4 mb-3">
+          <label for="validarNombre">Nombre:<span class="red">*</span></label>
+          <input type="text" class="form-control" id="validarNombre" name="validarNombre" required>
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="col-md-4 mb-3">
+          <label for="validarApellidos">Apellidos:<span class="red">*</span></label>
+          <input type="text" class="form-control" id="validarApellidos" name="validarApellidos" required>
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="col-md-4 mb-3">
+          <label for="validarEmail">Email:<span class="red">*</span></label>
+          <input type="email" class="form-control" id="validarEmail" name="validarEmail" required>
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="col-md-4 mb-3">
+          <label for="validarTelefono">Teléfono:</label>
+          <input type="number" class="form-control" id="validarTelefono" name="validarTelefono" max="9999999999">
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="col-md-4 mb-3">
+          <label for="validarTema">Tema:<span class="red">*</span></label>
+          <select class="custom-select" id="validarTema" name="validarTema" required>
+              <option selected disabled value="">Selecciona...</option>
+              <option value="Problema con acceso a Web">Problema con acceso a Web</option>
+              <option value="Consulta sobre poda autorizada">Consulta sobre poda autorizada</option>
+              <option value="Sacar turno para poda">Sacar turno para poda</option>
+              <option value="Otras cuestiones">Otras cuestiones</option>
+          </select>
+      </div>
+  </div>
+
+  <div class="form-row">
+      <div class="col-md-4 mb-3">
+          <label for="validarAsunto">Asunto:</label>
+          <input type="text" class="form-control" id="validarAsunto" name="validarAsunto" required>
+      </div>
+  </div>
+
+  <div class="form-group">
+      <label for="validationMensaje">Mensaje:<span class="red">*</span></label>
+      <textarea class="form-control" id="validationMensaje" name="validationMensaje" rows="3" min="25" required></textarea>
+  </div>
+
+  <div class="form-group mb-10">
+      <button class="btn btn-primary" type="submit" name="submit">Enviar</button>
+      <button class="btn btn-success" type="reset" name="reset">Limpiar</button>
+  </div>
+
+</form>
+
+<footer>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12"> <h3> Enlaces Útiles</h3>
+          <ul class="list-inline text-right">
+            <li id="linkext"><a href="https://ambiente.cordoba.gob.ar/plan-forestal-urbano/" target="blank">Municipalidad de Córdoba</a> </li>
+            <li id="linkext"><a href="https://www.cba.gov.ar/reparticion/ministerio-de-coordinacion/secretaria-de-ambiente/" target="blank" >Ambiente Provincia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col-12"> Este sitio web es una creación objeto de la Materia "Programación Web 1" de la Tecnicatura Superior en Desarrollo web y Aplicaciones Digitales del ISPC. Fue creado por: Andulce Natalia, Orellano Laura, Ezequiel Fuentes y Riccio Martín, utilizando las herramientas HTML5 y CSS. @Copyright 2021.
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  </body>
+ <script>
+  (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+          var forms = document.getElementsByClassName('needs-validation');
+          var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+              }, false);
+          });
+      }, false);
+  })();
+</script>
+<script src="js/script.js"></script>
+ 
 </html>

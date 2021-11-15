@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="shortcut icon" href="css/favicon.png" >
+    <title>CONTACTO PRUEBA</title>
+</head>
+
+    <body class="content"> 
+        <header>
+          <img src="css/banner.jpg" id="banner" class=logo />
+      </header>
+    
+      <nav>
+        <ol>
+        <li><a href="login.html">Login</a></li> 
+        <li><a href="registro.html">Registrarse</a></li>
+        <li><a href="contacto.html">Contacto </a></li>
+        <li><a href="como_cuidarlas.html">Cuidados </a></li>
+        <li><a href="nativas.html">Plantas Nativas </a></li> 
+        <li><a href="index.html">Inicio</a></li> 
+      </ol>
+      </nav>
+
+      <p>FORMULARIO DE CONTACTO</p>
+        
+        <form action="enviar.php" method="post">
+        <input type="text" name="Nombre" required placeholder="Nombre: Juan Perez">
+        <input type="email" name="Email" required placeholder= "mail@mail.com">
+        <input type="text" name="Telefono" required placeholder= "con codigo de area sin 0 y sin 15">
+        <textarea name="Mensaje" required placeholder= "Escribe tu mensaje aqui"></textarea>
+        <button type="submit" value="ENVIAR"> ENVIAR </button>
+        </form>
+
+        <script>
+          function mOver(obj) {
+            obj.innerHTML = "Gracias por contactarte"
+          }
+          
+          function mOut(obj) {
+            obj.innerHTML = "Enviar"
+          }
+          </script>
+
+<footer>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12"> <h3> Enlaces Útiles</h3>
+          <ul class="list-inline text-right">
+            <li id="linkext"><a href="https://ambiente.cordoba.gob.ar/plan-forestal-urbano/" target="blank">Municipalidad de Córdoba</a> </li>
+            <li id="linkext"><a href="https://www.cba.gov.ar/reparticion/ministerio-de-coordinacion/secretaria-de-ambiente/" target="blank" >Ambiente Provincia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="col-12"> Este sitio web es una creación objeto de la Materia "Programación Web 1" de la Tecnicatura Superior en Desarrollo web y Aplicaciones Digitales del ISPC. Fue creado por: Andulce Natalia, Orellano Laura y Riccio Martín, utilizando las herramientas HTML5 y CSS. @Copyright 2021.
+        </div>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <script src="JS/script.js"></script>
+    
+</body>
+</html>
